@@ -1,0 +1,50 @@
+\documentclass[12pt,draft]{article}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{graphicx}
+\usepackage{amsmath}
+
+\begin{document}
+\title{Final Project: The Car Backup Sensor}
+\date{\today}
+\author{Corey Soper, Curran McKenzie, and Robert Roche\\ 3-2 Engineering Department, Assumption College}
+\maketitle
+\begin{abstract}
+\indent
+For our final project, we have decided to expand on the backup sensor which we tested a little bit in class. The result that we hope to achieve, is a sensor which will display, on an LED screen, the distance that it is from an object. We will add warning signs on the screen as well. Also, we plan to add a buzzer and LED's which will buzz and flash at a frequency that is proportional to the distance that the sensor is from the object it is approaching. This will make the buzzer and LED's go off faster, the closer that the sensor is to something. The finished product will be the equivalent of a real car's backup sensor, minus the camera of course. This will then be either mounted on a working set of wheels from an RC car and will be slowly backed up to a wall, or we might just have the RC car back up to the sensor. We chose to do this project because we found it to be very interesting, especially since it applies to something that many people use every day. This project will hopefully not only allow us to learn more about how backup sensors are made, but will also allow us to appreciate the work that goes into many electronic devices that we quite often utilize in our daily lives.
+\end{abstract}
+
+\newpage
+
+\section{Introduction/Motivation}
+Back up cameras in cars is quite a premium and not all cars have them. All it would require would be a circuit involving a motion sensor. During the year we worked on many different circuits. Our motivation for this project we wanted to combine some of these circuits and create a back up sensor for a car with working warning signs. 
+
+
+\section{Design and Build}
+
+First we started out with the original motion detector and our idea was to use it as a back up sensor for a car. Prof. Rodriguez gave us a more accurate sensor and we decided to build a car out of Lego parts, to keep the car simple and the motion detector easy to use. the first test using the motion detector were working well, but we didn't want to have to read the values off the computer. We added the display screen so the distance could be read from the car and we could also print warnings depending on the distance. Then we added a led for as a visual warning and a buzzer, that progressively beeps quicker an audible warning. We set the milliseconds in between the beeps equal to 15 times the distance. We put all these different parts onto the arduino and put all the individual programs together to form one working car back up sensor.
+
+\section{Conclusions and Results}
+
+The back up sensor works exactly how we planned it to, although occasionally it will read a random distance the doesn't make sense. As long as the lego car is moving and is not stationary the sensor seems to read the right answers. For the most part it reads accurately and would keep the driver safe from hitting anything. 
+
+                                     
+
+
+\section{Bibliography}
+"SparkFun Inventor's Kit - V3.2." Learn at SparkFun Electronics. N.p., n.d. Web. 08 May 2017.\\
+"WHAT IS ARDUINO?" Arduino - Home. N.p., n.d. Web. 08 May 2017.
+
+\section{Pictures}
+\newpage
+\begin{figure}\centering \includegraphics[width=.4 \textwidth]{Image-1.jpg}
+\end{figure}
+\begin{figure}\centering \includegraphics[width=.4 \textwidth]{Image-2.jpg}
+\end{figure}
+\begin{figure}\centering \includegraphics[width=.4 \textwidth]{Image-3.jpg}
+\end{figure}
+\begin{figure}\centering \includegraphics[width=.4 \textwidth]{Image-4.jpg}
+\end{figure}
+\begin{figure} \includegraphics[width=.4 \textwidth]{Image.jpg}
+\end{figure}
+\end{document}
